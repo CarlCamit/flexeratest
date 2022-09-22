@@ -30,6 +30,7 @@ func main() {
 	flag.Parse()
 	if *csvFile == "" {
 		fmt.Println("please provide filepath to a CSV")
+		return
 	}
 
 	f, err := os.Open(*csvFile)
